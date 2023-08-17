@@ -24,7 +24,7 @@ function Login(props) {
 
         </form>
 
-        <button onClick={props.onFormSwitch}>Don't have an account? Register here!</button>
+        <button onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here!</button>
 
     </div>
   )

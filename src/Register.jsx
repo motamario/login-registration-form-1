@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function Register() {
+function Register(props) {
     const[email, setEmail] = useState('');
     const[pass, setPass] = useState('');
     const[name, setName] = useState('')
@@ -25,7 +25,7 @@ function Register() {
 
         </form>
 
-        <button>Already have an account? Login here!</button>
+        <button onClick={() => props.onFormSwitch('login')}>Already have an account? Login here!</button>
 
     </div>
   )
