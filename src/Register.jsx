@@ -11,9 +11,9 @@ function Register(props) {
      }
 
   return (
-    <div className='register'>
-
-        <form onSubmit={handleSubmit}>
+    <div className='auth-form-container'>
+            <h2>Register</h2>
+        <form className='register-fomr' onSubmit={handleSubmit}>
 
             <label htmlFor="name">Full Name:</label>
             <input type="text" value={name} name='name' id='name' placeholder='Full Name'/>
@@ -25,7 +25,7 @@ function Register(props) {
 
         </form>
 
-        <button onClick={() => props.onFormSwitch('login')}>Already have an account? Login here!</button>
+        <button className='link-btn' onClick={() => props.onFormSwitch('login')}>Already have an account? Login here!</button>
 
     </div>
   )

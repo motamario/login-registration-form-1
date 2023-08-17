@@ -12,9 +12,9 @@ function Login(props) {
   return (
 
 
-    <div className='login'>
-
-        <form onSubmit={handleSubmit}>
+    <div className='auth-form-container'>
+        <h2>Login</h2>
+        <form className='login-form' onSubmit={handleSubmit}>
 
             <label htmlFor="email">Email:</label>
             <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder='email@address.com' id='email' name='email' />
@@ -24,7 +24,7 @@ function Login(props) {
 
         </form>
 
-        <button onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here!</button>
+        <button className='link-btn' onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here!</button>
 
     </div>
   )
