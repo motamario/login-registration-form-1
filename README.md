@@ -1,4 +1,5 @@
 # React + Vite
+* In this tutorial, we will create a login and registration form using react js.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
